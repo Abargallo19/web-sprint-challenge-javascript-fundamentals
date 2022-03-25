@@ -63,6 +63,7 @@ const zooAnimals = [
   function animalNames(/*Your Code Here*/){
     /*Your Code Here*/
   }
+  console.log('helloa')
   
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
