@@ -118,7 +118,7 @@ const zooAnimals = [
   */
 
   function consume(a, b, cb){
-    /*Your Code Here */
+ return cb(a,b);
   }
  
   
@@ -129,8 +129,8 @@ const zooAnimals = [
  2. Return the sum of those numbers
  */
 
-function add(/*Your Code Here */){
-    /*Your Code Here*/
+function add(a,b){
+    return a + b;
   }
 
 
