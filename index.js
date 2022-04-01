@@ -30,9 +30,10 @@ function myFunction() {
 💡 NOTE: you may use a for loop for this function if you wish 
 */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
-
+function summation(num) {
+  let res = 0, total = 0;
+  while ((num1--)>0) total += ++res;
+  return total;
   }
  
 
@@ -60,10 +61,14 @@ const zooAnimals = [
   💡 NOTE: the array returned should be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function animalNames(item){
+    const displayNames = [];
+    zooAnimals.forEach(function(item){
+      displayNames.push(`name: ${item.animal_name}, scientific: ${item.scientific_name}`)
+    });
+    return displayNames;
   }
-  console.log('helloa')
+ 
   
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
@@ -76,8 +81,11 @@ const zooAnimals = [
   💡 NOTE: Do some research for other methods that can help help you
   */
 
-  function lowerCaseNames(array){
-    /*Your Code Here*/
+  function lowerCaseNames(names){
+    names = zooAnimals.map(function(item){
+      return item.animal_name.toLowerCase();
+    });
+    return names;
   }
   
   
