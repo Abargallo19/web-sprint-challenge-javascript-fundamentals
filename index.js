@@ -97,8 +97,11 @@ const zooAnimals = [
   3. Return this new array
   */
 
-  function lowPopulationAnimals(/*Your Code Here*/){
-    /*Your Code Here*/
+  function lowPopulationAnimals(low){
+    low = zooAnimals.filter(function(item){
+      return item.population < 5;
+    });
+    return low;
   }
   
 
@@ -111,8 +114,11 @@ const zooAnimals = [
   💡 NOTE: Remember the reduce method takes two arguments: a callback (which itself takes two args - the accumulator and the item), and an initial value for the count. Check MDN/W3Schools for syntax!
   */
 
-  function USApop(/*Your Code Here*/){
-    /*Your Code Here*/
+  function USApop(total){
+    total = zooAnimals.reduce(function(acc, item){
+      return acc + item.population;
+    }, 0);
+    return total;
   }
   
   
@@ -185,7 +191,9 @@ function greeting(firstName, lastName){
 */
 
 function CuboidMaker(object){
-  
+  this.length = property.length;
+  this.width = property.width;
+  this.height = property.height;
 }
 
 
