@@ -176,8 +176,8 @@ function greeting(firstName, lastName){
 - Instances of CuboidMaker should initialize `length`, `width` and `height` properties
 */
 
-function CuboidMaker(/*Your Code Here */){
-  /*Your Code Here */
+function CuboidMaker(object){
+  
 }
 
 
