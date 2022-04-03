@@ -191,9 +191,9 @@ function greeting(firstName, lastName){
 */
 
 function CuboidMaker(object){
-  this.length = property.length;
-  this.width = property.width;
-  this.height = property.height;
+  this.length = object.length;
+  this.width = object.width;
+  this.height = object.height;
 }
 
 
